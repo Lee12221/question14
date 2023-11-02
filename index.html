@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울구석구석</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <!-- #wrap>#left+#right -->
+    <div id="wrap">
+        <div id="left">
+            <!-- .logo+nav -->
+            <div class="logo">
+                <a href="#"><img src="img/logo.jpg" alt="로고"></a>
+            </div>
+            <nav>
+                <!-- ul.gnb>li*4>a[href="#"]{버튼$}+ul.sub>li*4>a[href="#"]{s버튼$} -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">버튼1</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼2</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼3</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">버튼4</a>
+                        <ul class="sub">
+                            <li><a href="#">s버튼1</a></li>
+                            <li><a href="#">s버튼2</a></li>
+                            <li><a href="#">s버튼3</a></li>
+                            <li><a href="#">s버튼4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="right">
+            <!-- #contents>#slide+#banner^#recent -->
+            <div id="contents">
+                <div id="slide">
+                    <!-- ul>li*4>a[href="#"]>div.text -->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="text">과거와 현재와 미래가 공존하는 도시, 서울</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="text">여행의 재미를 모두 가진 동네, 잠실</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="text">불이 꺼지지 않는 도시 서울, 서울의 밤</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="text">과거와 현재와 미래가 공존하는 도시, 서울</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="banner">
+                    <!-- ul>li*3>a[href="#"] -->
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/banner.jpg" alt="배너">
+                        </a></li>
+                        <li><a href="#">
+                            <h3>
+                                서울관광플라자
+                            </h3>
+                            <p>
+                                라이브 스튜디오 체험 교육생 모집 <br>
+                                모집기간 : 2023.08.00 - 08.00
+                            </p>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/next.png" alt="다음">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="recent">
+                <!-- section*2>.title -->
+                <section>
+                    <div class="title">공지사항</div>
+                    <!-- ul.notice>li*4>a[href="#"]>div.subject+div.date -->
+                    <ul class="notice">
+                        <li>
+                            <a href="#">
+                                <div class="subject">서울 둘레길 가이드 행사 연기	</div>
+                                <div class="date">2023-07-24</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">남산 타워 서울의 밤 축제	</div>
+                                <div class="date">2023-07-15</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">북촌 한옥마을 가이드 업데이트 	</div>
+                                <div class="date">2023-06-30</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">하계 경복궁 입장 시간 안내	</div>
+                                <div class="date">2023-06-10</div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="title">갤러리</div>
+                    <!-- ul.gallery>li*3>a[href="#"]>img[src="img/gallery$.jpg" alt="갤러리$"] -->
+                    <ul class="gallery">
+                        <li><a href="#"><img src="img/gallery2.jpg" alt="갤러리1">남산 케이블카</a></li>
+                        <li><a href="#"><img src="img/gallery3.jpg" alt="갤러리2">석촌호수</a></li>
+                        <li><a href="#"><img src="img/gallery1.jpg" alt="갤러리3">북촌한옥마을</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <!-- .f_logo+.copy+.family -->
+        <div class="f_logo">
+            <a href="#"><img src="img/logo.jpg" alt="풋터로고"></a>
+        </div>
+        <div class="copy">
+            서울관광재단 | 03190, 서울특별시 종로구 청계천로85 (31빌딩) 6층 | 
+            일반 관광 문의 1330 | 운영 : 월-금, 오전 9시~오후 6시 <br>
+            ⓒ 2022 Seoul Tourism Organization. All rights reserved.
+        </div>
+        <div class="family">
+            <select name="family" id="family">
+                <option value="">패밀리사이트</option>
+                <option value="">서울관광플라자</option>
+                <option value="">서울컨벤션뷰로</option>
+                <option value="">서울관광재단</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

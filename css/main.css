@@ -1,0 +1,172 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    transition: .3s;
+}
+img{display: block;}
+body{color: #333;}
+
+#wrap{height: 650px; display: flex;}
+#right{width: calc(100% - 200px);}
+/* 문제지에 적힌 대로 계산기 돌리기 */
+
+.logo img{width: 200px;}
+
+nav{padding: 40px 10px;}
+/* 네비 패딩 간격 먼저 주기  */
+.sub{display: none;}
+/* .gnb li:hover .sub{display: block;} */
+/* 지앤비에 마우스 대면 서브보여~~~ */
+/* js가기 전에 주석 처리하고 가깅 */
+
+.gnb a{line-height:40px;padding-left: 5px;}
+.sub a{line-height:32px; padding-left: 10px;}
+
+.gnb{box-shadow: 0 0 3px #333;}
+
+.gnb li:hover>a{ background: #eee;}
+
+/* 생략 가능 */
+.gnb>li>a{ border-bottom: 1px #fff solid;}
+.gnb>li:hover>a{border-bottom: 1px #333 solid;}
+/* 생략가능 */
+
+/* slide */
+#contents{
+    height: 400px; display: flex;
+}
+#slide{width: calc(100% - 230px);}
+/* 문제지 그대로 계산하기 */
+#banner{width: 230px;}
+
+#slide a{height: 400px; position: relative;}
+#slide li:nth-child(1) a{
+     background:  url(../img/slide1.jpg) center center / cover;
+}
+#slide li:nth-child(2) a{
+    background:  url(../img/slide2.jpg) center center / cover;
+}
+#slide li:nth-child(3) a{
+    background:  url(../img/slide3.jpg) center center / cover;
+}
+#slide li:nth-child(1) a{
+    background:  url(../img/slide1.jpg) center center / cover;
+}
+/* 슬라이드 이미지 배경으로 넣는 법 
+cover 알아서 늘어나게 하는 고~~
+../ 꼭 넣어줘야 함*/
+
+.text{
+    padding: 20px;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    /* 서비스~~~~ */
+    /* position: absolute;
+    bottom: 0%;
+    width: calc(100% - 40px); 
+    서비스*/
+}
+/* bottom 0% - a에 position relative 지정 했으니까 위치 한정시킬 수 있음 */
+
+#slide{overflow: hidden;}
+#slide li{width: 100%;}
+/* 무조건 폭 지정해주기~~~~~중요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#slide ul{
+        width: 400%;
+        display:flex;
+        animation: slide 9s infinite;
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    33%{margin-left:-100%;}
+    66%{margin-left:-200%;}
+    100%{margin-left:-300%;}
+
+}
+
+/* #banner */
+#banner{padding: 10px;background: #eee;}
+#banner ul{
+    box-shadow: 0 0 3px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    height: 380px;  
+    transition: .3s; 
+}
+#banner li:first-child img{
+    width: 190px;   
+}
+#banner li:last-child img{
+    width: 80px;   
+}
+#banner a{display: inline-block;}
+#banner li:first-child{text-align: center;}
+#banner li:nth-child(2){
+    padding: 0 10px;
+}
+#banner li:last-child{text-align: right;}
+#banner p{font-size: 13px;}
+#banner h3{line-height: 40px;}
+#banner ul:hover{background: #fff;}
+
+/* #recent */
+#recent{
+    display: flex; height: 250px;
+    justify-content: space-evenly;
+}
+#recent section{
+    width: calc(50% - 30px); 
+    padding: 20px 0;   
+}
+.title{
+    line-height: 30px;text-align: center;
+    box-shadow: 0 0 3px #333;
+}
+
+.notice{padding-top: 20px;}
+.notice a{
+    display: flex;
+    justify-content: space-between;
+    line-height: 39px;
+    border-bottom: 1px #ccc dotted;
+}
+.notice a:hover{background: #eee;}
+
+.gallery img{height: 130px;}
+.gallery{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 30px;
+}
+.gallery a:hover img{opacity: .7;}
+.gallery a:hover{text-decoration: underline;}
+
+/* #footer */
+#footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+}
+.f_logo img{height: 100px;}
+.f_logo{
+    width: 200px;
+    filter: grayscale(1);
+}
+.copy{line-height: 24px;}
+.family{
+    padding-right: 20px;
+}
+.family select{
+    width: 150px;
+    height: 32px;
+}
